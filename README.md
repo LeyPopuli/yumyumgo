@@ -1,5 +1,9 @@
 # yumyumgo
 
+## CURRENTLY UNDER DEVELOPMENT AND EVOLUTION
+
+<img width="226" alt="image" src="https://github.com/LeyPopuli/yumyumgo/assets/118773922/4bfbac48-52ad-4baf-9372-598f201c58d6">
+
 A new Flutter project.
 
 ## Getting Started
