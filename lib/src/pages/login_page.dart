@@ -21,13 +21,13 @@ class LoginPage extends StatelessWidget {
                   Colors.black.withOpacity(0.4),
                   BlendMode.darken,
                 ),
-                child: Image(
-                  width: double.infinity,
-                  height: 300.0,
-                  fit: BoxFit.cover,
-                  image: AssetImage('assets/login-background.png'),
-                ),
-              ),
+                child: Image.network(
+              'https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
+              width: double.infinity,
+              height: 300.0,
+              fit: BoxFit.cover,
+            ),
+          ),
               Container(
                 margin: EdgeInsets.only(top: 30.0),
                 child: backButton(context, Colors.white),

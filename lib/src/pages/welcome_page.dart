@@ -17,10 +17,9 @@ class WelcomePage extends StatelessWidget {
           decoration: BoxDecoration(
             image: DecorationImage(
                 fit: BoxFit.cover,
-                //         image: NetworkImage(
-                //             'https://images.unsplash.com/photo-1586511934875-5c5411eebf79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80'))),
-                image: AssetImage('assets/welcome-background.png')),
-          ),
+                        image: NetworkImage(
+                            'https://images.unsplash.com/photo-1586511934875-5c5411eebf79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80')),
+                            ),
           child: BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 1.0, sigmaY: 1.0),
             child: Container(color: Colors.black.withOpacity(0.5)),
