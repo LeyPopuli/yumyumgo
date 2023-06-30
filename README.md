@@ -1,6 +1,6 @@
 # yumyumgo
 
-## *Currently under development*
+## *Currently under development...*
 
 <img width="100" alt="image" src="https://github.com/LeyPopuli/yumyumgo/assets/118773922/c579f4e4-cb4f-4427-8181-7ac01cf58085">
 
