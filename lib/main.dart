@@ -13,11 +13,6 @@ class MyApp extends StatelessWidget {
       routes: routes,
       initialRoute: 'welcome',
       theme: ThemeData(
-          primaryColorDark: Color.fromRGBO(36, 42, 55, 1.0),
-          primaryColor: Color.fromRGBO(157, 4, 192, 1),
-          cardColor: Color.fromRGBO(255, 45, 85, 1.0),
-          disabledColor: Color.fromRGBO(241, 242, 246, 1.0),
-          primaryColorLight: Color.fromRGBO(24, 119, 242, 1.0),
           scaffoldBackgroundColor: Colors.white,
           appBarTheme:
               AppBarTheme(iconTheme: IconThemeData(color: Colors.black))),

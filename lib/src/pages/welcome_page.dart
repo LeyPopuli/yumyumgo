@@ -1,10 +1,15 @@
 import "dart:ui";
 
 import "package:flutter/material.dart";
+import "package:flutter/services.dart";
+import "package:yumyumgo/src/colors/colors.dart";
 
 class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+        SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.black));
+
     return Scaffold(
         body: Stack(
       children: [
@@ -53,10 +58,12 @@ class WelcomePage extends StatelessWidget {
               width: 350,
               height: 45,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, 'login');
+                },
                 style: ElevatedButton.styleFrom(
                   shape: StadiumBorder(),
-                  backgroundColor: Theme.of(context).primaryColor,
+                  backgroundColor: purple,
                   elevation: 0.5,
                 ),
                 child: Row(
@@ -65,7 +72,7 @@ class WelcomePage extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(left: 10.0),
                       child: Text(
-                        'Login',
+                        'Log In',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 15.0,
@@ -85,7 +92,7 @@ class WelcomePage extends StatelessWidget {
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   shape: StadiumBorder(),
-                  backgroundColor: Theme.of(context).primaryColorLight,
+                  backgroundColor: blue,
                   elevation: 0.5,
                 ),
                 child: Row(
