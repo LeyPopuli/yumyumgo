@@ -2,7 +2,10 @@
 
 ## *Currently under development*
 
-<img width="226" alt="image" src="https://github.com/LeyPopuli/yumyumgo/assets/118773922/4bfbac48-52ad-4baf-9372-598f201c58d6">
+<img width="200" alt="image" src="https://github.com/LeyPopuli/yumyumgo/assets/118773922/4bfbac48-52ad-4baf-9372-598f201c58d6">
+
+<img width="200" alt="image" src="https://github.com/LeyPopuli/yumyumgo/assets/118773922/80b3b12a-d1fd-490a-ae53-42fcdb9fdab0">
+
 
 A new Flutter project.
 
