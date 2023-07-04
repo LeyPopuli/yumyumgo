@@ -1,9 +1,16 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 //Routes
 import 'package:yumyumgo/src/routes/routes.dart';
 
-void main() => runApp(MyApp());
+import 'http.dart';
+
+void main() {
+  HttpOverrides.global = MyHttpOverrides();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override

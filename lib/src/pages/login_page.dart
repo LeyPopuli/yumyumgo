@@ -22,12 +22,12 @@ class LoginPage extends StatelessWidget {
                   BlendMode.darken,
                 ),
                 child: Image.network(
-              'https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
-              width: double.infinity,
-              height: 300.0,
-              fit: BoxFit.cover,
-            ),
-          ),
+                  'https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
+                  width: double.infinity,
+                  height: 300.0,
+                  fit: BoxFit.cover,
+                ),
+              ),
               Container(
                 margin: EdgeInsets.only(top: 30.0),
                 child: backButton(context, Colors.white),
@@ -66,12 +66,17 @@ class LoginPage extends StatelessWidget {
                       _loginButton(context),
                       Container(
                         margin: EdgeInsets.only(top: 30.0),
-                        child: Text(
-                          'Forgot your pasword?',
-                          style: TextStyle(
-                              color: black,
-                              fontWeight: FontWeight.w400,
-                              fontSize: 16.0),
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(context, 'forgot-password');
+                          },
+                          child: Text(
+                            'Forgot your pasword?',
+                            style: TextStyle(
+                                color: black,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 16.0),
+                          ),
                         ),
                       ),
                       Container(
@@ -86,14 +91,19 @@ class LoginPage extends StatelessWidget {
                                   fontWeight: FontWeight.w400,
                                   fontSize: 15.0),
                             ),
-                            Container(
-                              margin: EdgeInsets.symmetric(horizontal: 10.0),
-                              child: Text(
-                                'Sign up',
-                                style: TextStyle(
-                                    color: purple,
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 16.0),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.pushNamed(context, 'sign-up');
+                              },
+                              child: Container(
+                                margin: EdgeInsets.symmetric(horizontal: 10.0),
+                                child: Text(
+                                  'Sign up',
+                                  style: TextStyle(
+                                      color: purple,
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 16.0),
+                                ),
                               ),
                             ),
                           ],
