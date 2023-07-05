@@ -1,11 +1,9 @@
 import 'dart:io';
-
+import 'http.dart';
 import 'package:flutter/material.dart';
 
 //Routes
 import 'package:yumyumgo/src/routes/routes.dart';
-
-import 'http.dart';
 
 void main() {
   HttpOverrides.global = MyHttpOverrides();

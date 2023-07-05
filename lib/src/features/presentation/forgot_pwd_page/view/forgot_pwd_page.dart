@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:yumyumgo/src/widgets/back_button.dart';
+import 'package:yumyumgo/src/features/presentation/widgets/back_button.dart';
 
-import '../colors/colors.dart';
+import '../../../../colors/colors.dart';
 
 class ForgotPassword extends StatelessWidget {
   @override

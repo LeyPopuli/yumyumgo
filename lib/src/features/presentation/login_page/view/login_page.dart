@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yumyumgo/src/colors/colors.dart';
-import 'package:yumyumgo/src/widgets/back_button.dart';
+import 'package:yumyumgo/src/features/presentation/widgets/back_button.dart';
 
 // UI
 import 'package:flutter/services.dart';
@@ -162,7 +162,7 @@ Widget _loginButton(BuildContext context) {
     height: 45,
     child: ElevatedButton(
       onPressed: () {
-        Navigator.pushNamed(context, 'login');
+        Navigator.pushNamed(context, 'tabs');
       },
       style: ElevatedButton.styleFrom(
         shape: StadiumBorder(),
