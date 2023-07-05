@@ -8,6 +8,8 @@
 
 <img width="200" alt="image" src="https://github.com/LeyPopuli/yumyumgo/assets/118773922/55434494-742c-4ef0-8934-13719b962a28">
 
+<img width="200" alt="image" src="https://github.com/LeyPopuli/yumyumgo/assets/118773922/3a057149-16b8-4b88-8f1f-9d6f926e8dec">
+
 <img width="200" alt="image" src="https://github.com/LeyPopuli/yumyumgo/assets/118773922/ec2fe0ff-5dd5-49d0-8ad7-cdb41bd729eb">
 
 
