@@ -1,4 +1,4 @@
-# yumyumgo
+# Yumyumgo!
 
 ## *Currently under development...*
 
