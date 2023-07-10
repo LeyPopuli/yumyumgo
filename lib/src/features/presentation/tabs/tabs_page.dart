@@ -2,10 +2,10 @@ import "package:flutter/material.dart";
 import "package:yumyumgo/src/colors/colors.dart";
 
 // Tabs
-import 'package:yumyumgo/src/features/presentation/tabs/explore_tab.dart';
-import 'package:yumyumgo/src/features/presentation/tabs/favourite_tab.dart';
-import 'package:yumyumgo/src/features/presentation/tabs/my_order_tab.dart';
-import 'package:yumyumgo/src/features/presentation/tabs/profile_tab.dart';
+import 'package:yumyumgo/src/features/presentation/tabs/explore_tab/view/explore_tab.dart';
+import 'package:yumyumgo/src/features/presentation/tabs/favourite_tab/view/favourite_tab.dart';
+import 'package:yumyumgo/src/features/presentation/tabs/my_order_tab/view/my_order_tab.dart';
+import 'package:yumyumgo/src/features/presentation/tabs/profile_tab/view/profile_tab.dart';
 
 class TabsPage extends StatefulWidget {
   TabsPage({Key? key}) : super(key: key);

@@ -12,7 +12,6 @@
 
 <img width="200" alt="image" src="https://github.com/LeyPopuli/yumyumgo/assets/118773922/ec2fe0ff-5dd5-49d0-8ad7-cdb41bd729eb">
 
-
 ## Getting Started
 
 This project is a starting point for a Flutter application.
