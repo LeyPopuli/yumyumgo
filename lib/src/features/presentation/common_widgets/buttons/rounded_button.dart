@@ -53,7 +53,7 @@ Widget _createElevatedButtonWithIcon(
           ),
           Container(
             margin: EdgeInsets.only(left: 10.0),
-            child: createText(
+            child: headerText(
                 text: labelButton,
                 color: labelColor,
                 fontSize: labelFontSize,
@@ -79,7 +79,7 @@ Widget _createElevatedButtonNotIcon(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            child: createText(
+            child: headerText(
                 text: labelButton,
                 color: labelColor,
                 fontSize: labelFontSize,

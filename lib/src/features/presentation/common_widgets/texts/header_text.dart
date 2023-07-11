@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget createText(
+Widget headerText(
     {String text = "",
     Color color = Colors.black,
     FontWeight fontWeight = FontWeight.bold,

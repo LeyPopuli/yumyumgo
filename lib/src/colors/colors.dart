@@ -6,3 +6,4 @@ final pink = Color.fromRGBO(255, 45, 85, 1.0);
 final blue = Color.fromRGBO(24, 119, 242, 1.0);
 final darkGrey = Color.fromRGBO(167, 168, 174, 1);
 final lightGrey = Color.fromRGBO(234, 236, 238, 1);
+final yellow = Color.fromRGBO(255, 193, 77, 1);

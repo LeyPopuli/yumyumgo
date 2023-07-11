@@ -4,6 +4,8 @@ import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import "package:yumyumgo/src/colors/colors.dart";
 
+import "../../common_widgets/texts/header_text.dart";
+
 class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -39,11 +41,11 @@ class WelcomePage extends StatelessWidget {
           children: [
             Container(
                 padding: EdgeInsets.symmetric(horizontal: 50.0),
-                child: Text('COOKING IS OVERRATED, LET US DO THE WORK.',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 45.0))),
+                child: headerText(
+                    text: 'COOKING IS OVERRATED, LET US DO THE WORK.',
+                    color: Colors.white,
+                    fontSize: 45.0,
+                    textAlign: TextAlign.left)),
             Container(
                 margin: EdgeInsets.only(bottom: 50.0),
                 padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 30.0),

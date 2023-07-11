@@ -16,14 +16,18 @@ class ExploreTab extends StatelessWidget {
               children: [
                 _topBar(context),
                 Container(
-                    margin: EdgeInsets.symmetric(vertical: 20.0),
+                    margin: EdgeInsets.symmetric(vertical: 10.0),
                     alignment: Alignment.centerLeft,
-                    child: createText(
+                    child: headerText(
                         text: 'Discover new places',
                         color: Colors.black,
                         fontSize: 30.0)),
                 _sliderCards(),
-                _headers(context, "Popular this week", "Show all"),
+                GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, 'collections');
+                    },
+                    child: _headers(context, "Popular this week", "Show all")),
                 createPopularCard(
                     image: NetworkImage(
                         'https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80'),
@@ -131,7 +135,7 @@ Widget _topBar(BuildContext context) {
 
 Widget _sliderCards() {
   return SizedBox(
-      height: 350.0,
+      height: 320.0,
       child: ListView.builder(
           itemCount: 4,
           scrollDirection: Axis.horizontal,
@@ -152,8 +156,8 @@ Widget _card(BuildContext context) {
           ClipRRect(
             borderRadius: BorderRadius.circular(20),
             child: Image(
-                width: 210.0,
-                height: 250.0,
+                width: 200.0,
+                height: 230.0,
                 fit: BoxFit.cover,
                 image: NetworkImage(
                     'https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80')),
@@ -179,7 +183,7 @@ Widget _card(BuildContext context) {
               ),
               Row(
                 children: [
-                  Icon(Icons.star, color: purple, size: 16),
+                  Icon(Icons.star, color: yellow, size: 16),
                   Text("4.8",
                       style: TextStyle(
                           color: Colors.black,
@@ -220,7 +224,7 @@ Widget _headers(BuildContext context, String textHeader, String textAction) {
     children: [
       Container(
         alignment: Alignment.centerLeft,
-        child: createText(text: textHeader, fontSize: 20.0),
+        child: headerText(text: textHeader, fontSize: 20.0),
       ),
       Spacer(),
       GestureDetector(
@@ -263,7 +267,7 @@ Widget _cardCollection(BuildContext context) {
         ClipRRect(
           borderRadius: BorderRadius.circular(20.0),
           child: Image(
-            width: 300,
+            width: 250,
             height: 150,
             fit: BoxFit.cover,
             image: NetworkImage(

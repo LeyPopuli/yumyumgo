@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:yumyumgo/src/colors/colors.dart';
-import 'package:yumyumgo/src/features/presentation/widgets/back_button.dart';
+import 'package:yumyumgo/src/features/presentation/common_widgets/buttons/back_button.dart';
 
 // UI
 import 'package:flutter/services.dart';
+import 'package:yumyumgo/src/features/presentation/common_widgets/texts/header_text.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -47,13 +48,7 @@ class LoginPage extends StatelessWidget {
                 child: Center(
                   child: Column(
                     children: [
-                      Text(
-                        'Welcome back',
-                        style: TextStyle(
-                            color: black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 30.0),
-                      ),
+                      headerText(text: 'Welcome back', fontSize: 30.0),
                       Text(
                         'Login to your account',
                         style: TextStyle(

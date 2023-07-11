@@ -57,7 +57,7 @@ Widget createPopularCard(
                     ),
                     Row(
                       children: [
-                        Icon(Icons.star, color: purple, size: 16.0),
+                        Icon(Icons.star, color: yellow, size: 16.0),
                         Text(review,
                             style: TextStyle(
                                 color: Colors.black,

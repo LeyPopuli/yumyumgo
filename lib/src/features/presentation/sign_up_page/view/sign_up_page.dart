@@ -1,7 +1,8 @@
 import "package:flutter/material.dart";
+import 'package:yumyumgo/src/features/presentation/common_widgets/texts/header_text.dart';
 
 import '../../../../colors/colors.dart';
-import '../../widgets/back_button.dart';
+import '../../common_widgets/buttons/back_button.dart';
 
 class SignUpPage extends StatelessWidget {
   @override
@@ -17,13 +18,7 @@ class SignUpPage extends StatelessWidget {
             child: Container(
                 padding: EdgeInsets.all(30.0),
                 child: Column(children: [
-                  Text(
-                    'Create an account',
-                    style: TextStyle(
-                        color: black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 30.0),
-                  ),
+                  headerText(text: 'Create an account', fontSize: 30.0),
                   _userNameInput(),
                   _emailInput(),
                   _phoneNumberInput(),
